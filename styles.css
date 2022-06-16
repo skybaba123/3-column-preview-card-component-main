@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 15px;
+  transition: all 0.5s;
+  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  margin-top: 2.5rem;
+  margin-left: 3rem;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  font-family: "Big Shoulders Display", cursive;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  line-height: 1.5;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  padding: 15px 45px 15px 30px;
+  border: none;
+  border-radius: 25px;
+  margin-top: 5rem;
+  margin-left: 3rem;
+  font-weight: 700;
+}
+
+.container {
+  width: 300px;
+  height: 480px;
+}
+
+.first-con {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0px 0px 10px;
+}
+
+.first-con button {
+  color: hsl(31, 77%, 52%);
+}
+
+.second-con {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.second-con button {
+  color: hsl(184, 100%, 22%);
+}
+
+.third-con {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.third-con button {
+  color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 900px) {
+  /*Tablets */
+  body {
+    margin-top: 3rem;
+  }
+
+  .container {
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .first-con {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .second-con {
+    border-radius: 0;
+  }
+  .third-con {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
